@@ -1,0 +1,318 @@
+<!-- Section0 Area Start -->
+<section id="section0" class="slider-area">
+    <div class="main-slider owl-theme owl-carousel">
+        <!-- Start Slingle Slide -->
+        <div class="single-slide item kenburns-top "
+            style="background-image: url(img/Background\ .png); background-size: cover;">
+
+
+            <!-- <img src="img/slider/placehold.png"> -->
+
+            <!-- Start Slider Content -->
+
+            <div class="slider-content-area">
+                <div class="row">
+                    <div class="slide-content-wrapper text-center">
+                        <div class="slide-content">
+                            <span class="circle"><img src="img/icon_account.png" alt=""
+                                    style="margin-left: 3px;"></span>
+                            <img src="img/TitleIntro.png" alt="" class="center js-scroll-trigger" style="width: 27vh;">
+                            <a class="default-btn" href="#section1">See more</a>
+                            <img class="classic" src="img/new/icon.png">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Slider Content -->
+        </div>
+        <!-- End Single Slide -->
+        <!-- Start Slingle Slide -->
+        <div class="single-slide item" style="background-image: url(img/Background\ .png); background-size: cover;">
+
+
+            <!-- Start Slider Content -->
+
+            <div class="slider-content-area">
+                <div class="row">
+                    <div class="slide-content-wrapper text-center">
+                        <div class="slide-content">
+                            <span class="circle"><img src="img/icon_account.png" alt=""
+                                    style="margin-left: 3px;"></span>
+                            <img src="img/TitleIntro.png" alt="" class="center js-scroll-trigger" style="width: 27vh;">
+                            <a class="default-btn" href="#section1">See more</a>
+                            <img class="classic" src="img/new/icon.png">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Slider Content -->
+        </div>
+    </div>
+</section>
+
+<!-- Section0 Area End -->
+<!-- Section1 Start -->
+<section id="section1" class="topOff">
+    <div class="work_place">
+        <img src="img/UTE_icon.png" alt="" class="center" style="width: 10vh; padding-top: 4px;">
+    </div>
+    {{#each about }}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="img_profile">
+                    <span class="circle" style=" height: 45vh;width: 45vh;">
+                        <img src="http://localhost:8000/images/upload/{{img}}" alt="" style="margin-left: 3px;width: 45vh;"></span>
+                    <div class="icon_socail">
+                        <a href="{{linkGithub}}">
+                            <span class="circle" style=" height: 4vh;width: 4vh;">
+                                <img src="img/icon_github.png" alt="" style="width: 4vh;"></span>
+                        </a>
+                        <a href="{{linkLinkend}}">
+                            <span class="circle" style=" height: 4vh;width: 4vh;">
+                                <img src="img/Linkedin_Icon.png" alt="" style="width: 4vh;"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="info_profile">
+                    <h1>{{Name}}</h1>
+                    <h3>{{Title}}</h3>
+                    <span>{{Description}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</section>
+<!-- Section1 End -->
+<!-- Section2 Start-->
+<section id="section2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 ">
+                <div class="maintext text-center">
+                    <h2>Skills</h2>
+                    <span>Below are some of my skills, and I'm always looking to learn more.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row shapes">
+            {{#each skill}}
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="row">
+                    <div class="col-md-12 minHeightProp">
+                        <img class="imgback" src="http://localhost:8000/images/upload/{{img}}">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <span>{{Title}}</span>
+                            <p>{{Description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+<!-- Section2 End -->
+
+<!-- Section3 Start -->
+<section id="section3">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center">
+                    <h2>Personal Projects</h2>
+                    <h3>Here you can see some of the projects I've done on my own time.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-12 noPadding">
+                    <div id="news-slider" class="news-slider owl-theme owl-carousel">
+                        {{#each project}}
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <div class="post-abs">
+                                    <p>{{description}}</p>
+                                </div>
+                                <img src="http://localhost:8000/images/upload/{{img}}" alt="">
+                            </div>
+                            <h3 class="post-title"><a href="#">{{title}}</a></h3>
+                            <p class="post-description">
+                                {{name}}
+                            </p>
+                            <a href="{{linkProject}}" target="_blank"
+                                rel="noopener noreferrer">Details more</Details></a>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section3 End -->
+<!-- Testimonial Area Start -->
+<section id="section4" class="parallax-window" data-parallax="scroll">
+    <h2>Timeline</h2>
+    <div class="timeline">
+        <ul>
+            <!-- Content for timeline fist -->
+            {{#each timeline}}
+            <li>
+                <div class="InfoTimeline">
+                    <h3>{{Title}}</h3>
+                    <p>{{Description}}</p>
+                </div>
+                <div class="Time">
+                    <h4>{{Date}}</h4>
+                </div>
+            </li>
+            {{/each}}
+            <!-- End content for timeline fist -->
+            <div style="clear:both"></div>
+        </ul>
+    </div>
+</section>
+<!-- Testimonial Area End -->
+<!-- Blog Area Start -->
+<section id="section5" class="blog-area">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="blog-section-title text-center">
+                <h3>Linh Vo Blog</h3>
+                <h2>Our Latest News</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container blog-section">
+                {{#each blog}}
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="blog-section-date col-md-4 col-sm-4 col-xs-12 noPadding">
+
+                            <p class="month">June</p>
+                            <p class="date">6.6.1986</p>
+
+
+                        </div>
+
+                        <div class="blog-section-description col-md-8 col-sm-8 col-xs-12 noPadding">
+                            <h2>{{Title}}</h2>
+                            <p>{{Description}}</p>
+
+                            <a href="{{link}}">Shop</a>
+
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Area End -->
+<!-- Contact Start -->
+<section id="section6" class="contact">
+    <div class="contact100-form-title container">
+        <h3>Keep In Touch</h3>
+        <h2>Send A Message</h2>
+        <form class="contact100-form validate-form">
+
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">Your Name</span>
+                <input class="input100" type="text" name="name" placeholder="Enter your name">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input"
+                data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label-input100">Email</span>
+                <input class="input100" type="text" name="email" placeholder="Enter your email addess">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Message is required">
+                <span class="label-input100">Message</span>
+                <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn">
+                    <span>
+                        Submit
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class="container-contact100-form-btn response" style="margin-top: 30px;">
+                <p class="error">
+                </p>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Contact End -->
+<!-- Address Section Start -->
+<!-- <section id="section7" class="row address parallax-window" data-parallax="scroll"
+        data-image-src="img/slider/1900x1000.png">
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="col-md-5 col-md-offset-1 addess-description">
+                    <span>CemreBakery Location</span>
+                    <h2>CemreBakery Address</h2>
+                    <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born.
+                    </p>
+                    <ul>
+                        <li class="address-section">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <i class="fa fa-address-card"></i>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 lineHeight">
+                                    Primary:Lorem Ipsum Dolar<br>Second:Lorem Ipsum Dolar
+                                </div>
+                            </div>
+                        </li>
+                        <li class="address-section">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 lineHeight">
+                                    Primary:Lorem Ipsum Dolar<br>Second:Lorem Ipsum Dolar
+                                </div>
+                            </div>
+                        </li>
+                        <li class="address-section">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 lineHeight">
+                                    Primary:Lorem Ipsum Dolar<br>Second:Lorem Ipsum Dolar
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 addess-map">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<!-- Adress Section End -->
