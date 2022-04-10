@@ -30,7 +30,7 @@ app.use('' , homeRouter);
 
 
 app.listen(80, "0.0.0.0", async () => {
-    console.log('connected on port 3000')
+    console.log('connected on port 80')
     try {
         await createConnections();
         console.log('Database connect success')
