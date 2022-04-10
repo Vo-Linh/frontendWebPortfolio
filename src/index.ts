@@ -29,7 +29,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use('' , homeRouter);
 
 
-app.listen(3000, async () => {
+app.listen(80, "0.0.0.0", async () => {
     console.log('connected on port 3000')
     try {
         await createConnections();
